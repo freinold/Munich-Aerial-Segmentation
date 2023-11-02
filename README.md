@@ -10,8 +10,9 @@ Regions: Stadt München & Landkreis Fürstenfeldbruck
 
 ## Ideas
 
-1. Segment whole image with Segment Anything Model, then label parts with CLIP-like model trained on categories of aerial images
-2. Combine image segmentation with ground model data and lidar data to directly segment (needs labeling!)
+1. Segment whole image with [Segment Anything Model](https://segment-anything.com/), then label parts with CLIP-like model (https://github.com/facebookresearch/MetaCLIP) trained on categories of aerial images
+    - inspired by Grounded SAM (https://github.com/IDEA-Research/Grounded-Segment-Anything), example demo: https://huggingface.co/spaces/SkalskiP/SAM_and_MetaCLIP
+2. Combine image channels with ground model data and lidar data -> RGB + ground height + lidar height to direct segmentation with ViT, CNN or RNN (needs labeling!)
 
 ## Datasets
 
